@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name ="Description" content="Create a simple JavaScript like button.">
     <title> javascript-button-logic</title>
- 
+ <link rel="stylesheet" href="style .css">
 </head>
 <body>
 
@@ -18,35 +18,6 @@
         <!-- The Counter -->
         <p class="count-text"><span id="count">0</span> Likes</p>
     </div>
-
-    <script>
-        // JavaScript Logic
-        const likeBtn = document.getElementById('likeBtn');
-        const countDisplay = document.getElementById('count');
-        const heartIcon = document.getElementById('heart');
-
-        let count = 0;
-        let isLiked = false;
-
-        likeBtn.addEventListener('click', () => {
-            if (!isLiked) {
-                // If not liked: increment and change style
-                count++;
-                heartIcon.innerText = '❤️'; // Red heart
-                likeBtn.classList.add('active');
-                isLiked = true;
-            } else {
-                // If already liked: decrement and reset style
-                count--;
-                heartIcon.innerText = '🤍'; // White heart
-                likeBtn.classList.remove('active');
-                isLiked = false;
-            }
-
-            // Update the text on screen
-            countDisplay.innerText = count;
-        });
-    </script>
-
+    
 </body>
 </html>
